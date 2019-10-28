@@ -5,7 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <style>
+                @import url('https://fonts.googleapis.com/css?family=Arimo|Wire+One&display=swap');
+        </style>
         <title>Weather</title>
+        <link rel="stylesheet" href="style.css">
 
         <script src="/js/libraries/vue.min.js"></script>
         <script src="keys.js"></script>
@@ -26,15 +30,62 @@
     </head>
 
     <body>
-
-
-
-        <input placeholder="Enter Your ZIP Code" name="name" id="zip" />
-        <p id="zip_display"></p>
-
-
         <div class="results" id="app">
-            <h1>TIME</h1>
+            <div class="background">
+                <div class="todaysweather">
+                    <h1>Todays Weather</h1>
+                    <div class="windamount">
+                        <div id="arrow"></div>
+                        <h2>Wind</h2>
+                        <h3>16 mph</h3>
+                    </div>
+                    <div class="sun">
+                        <h4>Sunrise- 7:30</h4>
+                        <h4>Sunset- 6:36</h4>
+                    </div>
+                    <div class="p">
+                        <h5>Pollen count- High</h5>
+                        <h6>Pressure- 29.8</h6>
+                        <h6>Dew Point- 44º</h6>
+                        <h5>UV 2 out of 10</h5>
+                    </div>
+                </div>
+                <div class="now">
+                    <h7>Now</h7>
+                    <div class="zip">
+                        <input placeholder="Enter Your ZIP Code" name="name" id="zip" />
+                        <p id="zip_display"></p>
+                    </div>
+                    <div class="datetime">
+                        <h2>{{time.hour_12}} : {{time.minute}} : {{time.seconds}} {{time.ampm}}</h2>
+                        <h5>{{time.date}}</h5>
+                    </div>
+                    <div class="weather1">
+                        <h8>68º</h8>
+                        <h9>Partially cloudy</h9>
+                        <h10>Rain-20% chance</h10>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <h7>Forecast</h7>
+                </div>
+                <div class="group1">
+                    <h11>time</h11>
+                    <h12>64º</h12>
+                    <h13>Rain-40% chance</h13>
+                </div>
+                <div class="group2">
+                    <h11>time</h11>
+                    <h12>64º</h12>
+                    <h13>Rain-40% chance</h13>
+                </div>
+                <div class="group3">
+                    <h11>time</h11>
+                    <h12>64º</h12>
+                    <h13>Rain-40% chance</h13>
+                </div>
+            </div>
+           <!--  <h1>TIME</h1>
             <p>{{time.day}}</p>
             <p>{{time.date}}</p>
             <p>{{time.hour_12}} : {{time.minute}} : {{time.seconds}} {{time.ampm}}</p>
@@ -103,7 +154,7 @@
 
             <p>{{forecast[0].dewpt}}</p>
             <p>{{forecast[0].pres}} mb</p>
-
+ -->
         </div>
         <div id="map"></div>
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo|Wire+One&display=swap');
+@import url("https://use.typekit.net/vga0tvr.css");
 .degree_symbol:not(:empty)::after {
     content: "°"
 }
@@ -9,4 +11,176 @@
 #map {
 	width: 600px;
     height: 600px;
+}
+
+.background {  
+    width: 100vw;
+    height: 100vh;
+    background-image: url(image/sky.jpg);
+    background-size: 1920px 1440px;
+    display: grid;
+    grid-template-columns: .5fr 1.5fr 1fr 1fr 1fr;
+}
+.todaysweather {
+    width: 15vw;
+    background-color:rgb(5, 83, 144);
+    font-family: aktiv-grotesk;
+    color: white;
+}
+
+.now {
+    background-image: url(image/gradient.png);
+    color: white;
+    margin-top: 2.5vw;
+    margin-left: 1vw;
+
+}
+
+.datetime {
+    margin-top: 5vw;
+}
+
+.weather1 {
+    color:rgb(5, 83, 144);
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: -1vw;
+}
+
+.p {
+    margin-left: 1vw;
+}
+
+.windamount {
+    width: 5vw;
+    height: 10vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 1vw;
+}
+
+#arrow {
+    background-image: url(image/arrow.png);
+    width: 83px;
+    height: 38px;
+}
+
+.sun {
+    margin-top: 4vw;
+    margin-left: 1vw;
+}
+
+h1 {
+    padding-top: 1vw;
+    padding-left: .3vw;
+    font-size: 1.6em;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+h2 {
+    padding-left: .3vw;
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0vw;
+}
+
+h4 {
+    font-family: aktiv-grotesk, sans-serif;
+    margin: 0;
+}
+
+h5 {
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 200;
+    font-size: 1.5em;
+
+}
+
+h6 {
+    font-family: aktiv-grotesk, sans-serif;
+    margin: 0;
+    font-size: 1em;
+
+}
+
+h7 {
+    font-family: aktiv-grotesk, sans-serif;
+    font-size: 1.5em;
+}
+
+h8 {
+    font-family: 'Wire One', sans-serif;
+    font-size: 15em;
+    color:rgb(5, 83, 144);
+    
+}
+
+h9 {
+    color:rgb(5, 83, 144);
+    float: left;
+    font-family: aktiv-grotesk;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+h10 {
+    color:rgb(5, 83, 144);
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+    float: left;
+
+}
+
+h11 {
+    font-family: 'Wire One', sans-serif;
+    font-size: 1.5em;
+    margin-right: 3vw;
+}
+
+h12 {
+    font-family: 'Wire One', sans-serif;
+    font-size: 11em;
+}
+
+h13 {
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 200;
+    font-size: 2em;
+}
+
+.forecast {
+    position: absolute;
+    left: 45vw;
+    top: 5.5vh;
+    color: white;
+
+}
+
+.group1 {
+    color: white;
+    margin-left: 4vw;
+    margin-top: 20vw;
+}
+
+.group2 {
+    color: white;
+    margin-left: 4vw;
+    margin-top: 20vw;
+}
+
+.group3 {
+    color: white;
+    margin-left: 4vw;
+    margin-top: 20vw;
 }
