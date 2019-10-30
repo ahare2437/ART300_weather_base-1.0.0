@@ -32,6 +32,7 @@
     <body>
         <div class="results" id="app">
             <div class="background">
+                <div id="map"></div>
                 <div class="todaysweather">
                     <h1>Todays Weather</h1>
                     <div class="windamount">
@@ -43,8 +44,7 @@
                         <h4>Sunrise- {{current.sunrise}}</h4>
                         <h4>Sunset- {{current.sunset}}</h4>
                     </div>
-                    <div class="pollen_pressure">
-                        <h5>{{forecast[0].pop}}</h5>
+                    <div class="pressure">
                         <h6>Pressure- {{forecast[0].pres}} mb</h6>
                     </div>
                     <div class="dew_uv">
@@ -60,7 +60,7 @@
                     </div>
                     <div class="datetime">
                         <h2>{{time.hour_12}} : {{time.minute}} {{time.ampm}}</h2>
-                        <h5>{{time.date}}</h5>
+                        <div class="date">{{time.date}}</div>
                     </div>
                     <div class="weather1">
                         <div class="current_temp">{{current.temp.current}}º</div>
@@ -152,7 +152,6 @@
             <p>{{forecast[0].pres}} mb</p>
  -->
         </div>
-        <div id="map"></div>
 
 
 

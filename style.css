@@ -12,7 +12,7 @@
 	width: 200px;
     height: 200px;
     position: absolute;
-    top: -16.7vw;
+    top: 46.8vw;
 }
 
 .background {  
@@ -33,30 +33,36 @@
 .now {
     background-image: url(image/gradient.png);
     color: white;
+    background-size: 409px 1078px;
     max-width: 100%;
     max-height: 100%;
-    margin-top: 2.5vw;
-    margin-left: 1vw;
 
 }
 
 .datetime {
     margin-top: 5vw;
+    margin-left: 1vw;
+}
+
+.date {
+    font-family: aktiv-grotesk, sans-serif;
+    font-weight: 200;
+    font-size: 1.5em;
 }
 
 .weather1 {
     color:rgb(5, 83, 144);
     margin-left: 5em;
     margin-right: 5em;
-    margin-top: -1vw;
+    margin-top: 7.5vw;
 }
 
-.pollen_pressure {
-    margin-left: 1vw;
+.pressure {
+    margin-top: 6vw;
 }
 
 .dew_uv {
-    margin-left: 1vw;;
+    margin-top: 2vw;
 }
 
 .windamount {
@@ -89,7 +95,6 @@ h1 {
 }
 
 h2 {
-    padding-left: .3vw;
     font-family: aktiv-grotesk, sans-serif;
     font-weight: 200;
     font-style: normal;
@@ -112,6 +117,7 @@ h5 {
     font-family: aktiv-grotesk, sans-serif;
     font-weight: 200;
     font-size: 1.5em;
+    margin-left: 1vw;;
 
 }
 
@@ -119,12 +125,18 @@ h6 {
     font-family: aktiv-grotesk, sans-serif;
     margin: 0;
     font-size: 1em;
+    margin-left: 1vw;
 
 }
 
 .itsnow {
     font-family: aktiv-grotesk, sans-serif;
     font-size: 1.5em;
+    margin-left: 1vw;
+}
+
+.zip {
+    margin-left: 1vw;
 }
 
 .current_temp {
