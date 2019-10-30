@@ -35,54 +35,50 @@
                 <div class="todaysweather">
                     <h1>Todays Weather</h1>
                     <div class="windamount">
-                        <div id="arrow"></div>
                         <h2>Wind</h2>
-                        <h3>16 mph</h3>
+                        <div class="wind">{{forecast[0].wind_cdir_full}}</div>
+                        <h3>Speed {{current.wind.speed}}</h3>
                     </div>
                     <div class="sun">
-                        <h4>Sunrise- 7:30</h4>
-                        <h4>Sunset- 6:36</h4>
+                        <h4>Sunrise- {{current.sunrise}}</h4>
+                        <h4>Sunset- {{current.sunset}}</h4>
                     </div>
-                    <div class="p">
-                        <h5>Pollen count- High</h5>
-                        <h6>Pressure- 29.8</h6>
-                        <h6>Dew Point- 44º</h6>
-                        <h5>UV 2 out of 10</h5>
+                    <div class="pollen_pressure">
+                        <h5>{{forecast[0].pop}}</h5>
+                        <h6>Pressure- {{forecast[0].pres}} mb</h6>
+                    </div>
+                    <div class="dew_uv">
+                        <h6>Dew Point- {{forecast[0].dewpt}}º</h6>
+                        <h5>UV {{forecast[0].uv}}</h5>
                     </div>
                 </div>
                 <div class="now">
-                    <h7>Now</h7>
+                    <div class="itsnow">Now</div>
                     <div class="zip">
-                        <input placeholder="Enter Your ZIP Code" name="name" id="zip" />
+                        <input placeholder="Enter Your ZIP Code" v-on:input="zip_trigger" name="name" id="zip" />
                         <p id="zip_display"></p>
                     </div>
                     <div class="datetime">
-                        <h2>{{time.hour_12}} : {{time.minute}} : {{time.seconds}} {{time.ampm}}</h2>
+                        <h2>{{time.hour_12}} : {{time.minute}} {{time.ampm}}</h2>
                         <h5>{{time.date}}</h5>
                     </div>
                     <div class="weather1">
-                        <h8>68º</h8>
-                        <h9>Partially cloudy</h9>
-                        <h10>Rain-20% chance</h10>
+                        <div class="current_temp">{{current.temp.current}}º</div>
+                        <div class="clouds">Cloud coverage {{current.cloud_cover}}%</div>
+                        <div class="rain_percent">{{current.rain}}</div>
                     </div>
                 </div>
                 <div class="forecast">
-                    <h7>Forecast</h7>
+                    <div class="itsnow">Forecast</div>
                 </div>
-                <div class="group1">
-                    <h11>time</h11>
-                    <h12>64º</h12>
-                    <h13>Rain-40% chance</h13>
+                <div class="fhigh">
+                    <div class="high">Todays High- </div>
+                    <div class="numbers">{{forecast[0].max_temp}}º</div>
+                    <h13>Forecast Precipitation-{{forecast[0].precip}}</h13>
                 </div>
-                <div class="group2">
-                    <h11>time</h11>
-                    <h12>64º</h12>
-                    <h13>Rain-40% chance</h13>
-                </div>
-                <div class="group3">
-                    <h11>time</h11>
-                    <h12>64º</h12>
-                    <h13>Rain-40% chance</h13>
+                <div class="flow">
+                    <div class="low">Todays Low- </div>
+                    <div class="numbers">{{forecast[0].min_temp}}º</div>
                 </div>
             </div>
            <!--  <h1>TIME</h1>

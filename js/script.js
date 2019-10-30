@@ -845,6 +845,7 @@ var vm = new Vue({
 	data: weather,
 	methods: {
 		zip_trigger: function (){
+			console.log("hi");
 			myzip();
 		}
 	}
